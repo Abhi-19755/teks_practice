@@ -95,8 +95,10 @@ section {
   text-align: start;
 }
 
+
+/* 1mistake */
 #innerDiv h1,
-p {
+.AboutPara {
   margin-bottom: 2rem;
 }
 
@@ -206,15 +208,17 @@ p {
     background-color: #374151;
     color: white;
     align-items: center;
+    padding: 20px 30px;
 }
 
 
 .policies a{
     text-decoration: none;
     color: white;
+
 }
 
 .policy{
     display: inline-block;
-    padding: 0 20px;
+      padding: 0 20px;
 }
