@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grill Cottage Restaurant Menu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 32px 24px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 32px;
+            color: #d35400;
+            letter-spacing: 2px;
+        }
+        .menu-sections {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .menu-card {
+            flex: 1 1 350px;
+            min-width: 300px;
+            background: #fafafa;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 24px 16px;
+            margin-bottom: 24px;
+        }
+        .veg {
+            border-top: 6px solid #27ae60;
+        }
+        .non-veg {
+            border-top: 6px solid #c0392b;
+        }
+        .section-title {
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .icon {
+            font-size: 1.2em;
+        }
+        .category {
+            margin-bottom: 18px;
+        }
+        .category h3 {
+            margin: 0 0 6px 0;
+            font-size: 1.1em;
+            color: #555;
+            border-left: 3px solid #d35400;
+            padding-left: 8px;
+        }
+        ul.menu-items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul.menu-items li {
+            padding: 6px 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            justify-content: space-between;
+            color: #444;
+            position: relative;
+        }
+        ul.menu-items li .hover-img {
+            display: none;
+            position: absolute;
+            left: 110%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 120px;
+            z-index: 10;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            background: #fff;
+        }
+        ul.menu-items li:hover .hover-img {
+            display: block;
+        }
+        ul.menu-items li:last-child {
+            border-bottom: none;
+        }
+        .price {
+            color: #d35400;
+            font-weight: 500;
+        }
+        @media (max-width: 800px) {
+            .menu-sections {
+                flex-direction: column;
+                gap: 0;
+            }
+            .menu-card {
+                margin-bottom: 32px;
+            }
+        }
+        @media (max-width: 500px) {
+            .menu-container {
+                padding: 12px 2px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Grill Cottage Restaurant Menu</h1>
+        <div class="menu-sections">
+            <!-- Veg Menu Card -->
+            <div class="menu-card veg">
+                <div class="section-title"><span class="icon">🥦</span> Veg</div>
+                <div class="category">
+                    <h3>Starters</h3>
+                    <ul class="menu-items">
+                        <li>Paneer Tikka <span class="price">₹180</span>
+                            <span class="hover-img"><img src="img/butterfly1.jpg" alt="Paneer Tikka" style="width:100%;border-radius:8px;"></span>
+                        </li>
+                        <li>Veg Spring Rolls <span class="price">₹150</span>
+                            <span class="hover-img"><img src="img/butterfly2.jpg" alt="Veg Spring Rolls" style="width:100%;border-radius:8px;"></span>
+                        </li>
+                        <li>Hara Bhara Kebab <span class="price">₹160</span>
+                            <span class="hover-img"><img src="img/caterpiller.jpg" alt="Hara Bhara Kebab" style="width:100%;border-radius:8px;"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Main Course</h3>
+                    <ul class="menu-items">
+                        <li>Paneer Butter Masala <span class="price">₹240</span></li>
+                        <li>Dal Makhani <span class="price">₹200</span></li>
+                        <li>Veg Biryani <span class="price">₹220</span></li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Desserts</h3>
+                    <ul class="menu-items">
+                        <li>Gulab Jamun <span class="price">₹90</span></li>
+                        <li>Ras Malai <span class="price">₹110</span></li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Drinks</h3>
+                    <ul class="menu-items">
+                        <li>Sweet Lassi <span class="price">₹70</span></li>
+                        <li>Mango Shake <span class="price">₹80</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Non-Veg Menu Card -->
+            <div class="menu-card non-veg">
+                <div class="section-title"><span class="icon">🍗</span> Non-Veg</div>
+                <div class="category">
+                    <h3>Starters</h3>
+                    <ul class="menu-items">
+                        <li>Chicken Tikka <span class="price">₹220</span>
+                            <span class="hover-img"><img src="img/guy.jpg" alt="Chicken Tikka" style="width:100%;border-radius:8px;"></span>
+                        </li>
+                        <li>Fish Fingers <span class="price">₹250</span>
+                            <span class="hover-img"><img src="img/hashirama.jpg" alt="Fish Fingers" style="width:100%;border-radius:8px;"></span>
+                        </li>
+                        <li>Egg Pakora <span class="price">₹130</span>
+                            <span class="hover-img"><img src="img/kakashi.jpg" alt="Egg Pakora" style="width:100%;border-radius:8px;"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Main Course</h3>
+                    <ul class="menu-items">
+                        <li>Butter Chicken <span class="price">₹320</span></li>
+                        <li>Mutton Rogan Josh <span class="price">₹350</span></li>
+                        <li>Chicken Biryani <span class="price">₹280</span></li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Desserts</h3>
+                    <ul class="menu-items">
+                        <li>Phirni <span class="price">₹100</span></li>
+                        <li>Egg Pudding <span class="price">₹120</span></li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Drinks</h3>
+                    <ul class="menu-items">
+                        <li>Masala Chaas <span class="price">₹60</span></li>
+                        <li>Cold Coffee <span class="price">₹90</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
