@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            display: grid;
+            justify-content: center;
+            background-color: aqua;
+            
+        }
+        
+        form{
+            display: grid;
+            justify-content: center;
+            width: 700px;  
+        }
+
+        div
+        {
+            margin-bottom: 10px;
+        }
+
+        .colu{
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .colu input{
+            width: 200px;
+        }
+
+        #btn{
+            display: flex;
+            justify-content: center;
+        }
+
+        #hobby input{
+            display: grid;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Registration Form Using Table in HTML</h1>
+    <form action="">
+        <div>
+            <label for="First_Name">First Name</label>
+            <input type="text" name="First_Name" id="First_Name">
+            <span>(Max 50 characters Allowed)</span>
+        </div>
+        <div>
+
+            <label for="Last_Name">Last Name</label>
+            <input type="text" name="Last_Name" id="Last_Name">
+            <span>(Max 50 characters Allowed)</span>
+        </div>
+
+        <div>
+
+            <label for="Email">Email ID</label>
+            <input type="email" name="Email" id="Email">
+        </div>
+
+        <div>
+
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male"> <label for="gender">Male</label>
+            <input type="radio" name="gender" id="female"> <label for="gender">Female</label>
+            <input type="radio" name="gender" id="others"> <label for="gender">Others</label>
+        </div>
+        
+        <div>
+
+            <label for="DOB">Date of Birth(DOB)</label>
+            <input type="date" name="DOB" id="DOB">
+        </div>
+
+        <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" rows="7" cols="30"></textarea>        
+        </div>
+        
+        <div>
+
+            <label for="city">City</label>
+            <input type="text" name="city" id="city">
+        </div>
+
+        <div>
+
+            <label for="pincode">Pin Code</label>
+            <input type="number" name="pincode" id="pincode">
+        </div>
+
+        <div>
+
+            <label for="state">State</label>
+            <input type="text" name="state" id="state">
+        </div>
+
+        <div>
+
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country"><br>
+        </div>
+
+        <label for="hobbies">Hobbies</label>
+        <div id="">
+                <input type="checkbox" name="drawing" id="drawing"> <label for="drawing">Drawing</label><br>
+                <input type="checkbox" name="cooking" id="cooking"> <label for="cooking">Cooking</label><br>
+                <input type="checkbox" name="reading" id="reading"> <label for="reading">Reading</label><br>
+                <input type="checkbox" name="others" id="others"> <label for="others">Others</label><br>
+                <input type="text" name="others" id="others">
+                <span>(Max 50 charachters Allowed)</span>
+        </div>
+
+        <div>
+
+            <label for="Qualification">Qualification</label><br>
+
+                <input type="checkbox" name="high_school" id="high_school"> <label for="high_school">High School (10th)</label> <br>
+                <input type="checkbox" name="higher_school" id="higher_school"> <label for="higher_school">Higher School (12th)</label><br>
+                <input type="checkbox" name="graduation" id="graduation"> <label for="graduation">Graduation(Bachelors)</label><br>
+                <input type="checkbox" name="post_graduation" id="post_graduation"> <label for="post_graduation">Post Graduation (Masters)</label><br>
+                <input type="checkbox" name="phd" id="phd"> <label for="phd">Phd</label><br>
+        </div>
+
+        <div>
+
+            
+            <label for="courses">Courses Applied For</label>
+            <input type="radio" name="courses" id="bca"> <label for="bca">BCA (Bachelor of Computer Application)</label><br>
+            <input type="radio" name="courses" id="bcom"> <label for="bcom">B.Com (Bachelor of Commerce)</label><br>
+            <input type="radio" name="courses" id="bsc"> <label for="bsc">B.Sc</label><br>
+            <input type="radio" name="courses" id="ba"> <label for="ba">BA(Bachelor of Arts)</label><br>
+            <input type="radio" name="courses" id="mca"> <label for="mca">MCA(Masters of Computer Application)</label><br>
+            
+        </div>
+
+        <div id="btn">
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
