@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            /* Flexbox is alayout model use to arrange items in 1d either horizontal or vertical */
+            display: flex; 
+            justify-content: center; /* horizontal alignment */
+            align-items: center; /* vertical alignment */       
+        }
+        .inner{
+            background-color: red;
+            /* width: 100px; */
+            /* height: 100px; */
+            position: absolute;
+            /* margin-top: 20px; */
+            /* right: 10px; */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">top</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* body{
+            background-image: url('/img/guy.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        } */
+      .box {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: auto;
+        margin-top: 20vh;
+        margin-left: 20vh;
+        padding: 40px 20px 40px 20px;
+        box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2px);
+        border-radius: 10px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      .box > h1 {
+        text-align: center;
+      }
+
+      label {
+        margin-bottom: 5px;
+      }
+
+      input {
+        margin-bottom: 10px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 4px 2px 5px rgb(214, 214, 214);
+      }
+
+      input[type="password"] {
+        margin-bottom: 15px;
+      }
+
+      button {
+        padding: 15px 30px;
+        border-radius: 10px;
+        border: none;
+      }
+
+      #outer{
+        display: flex;
+      }
+
+
+      #forgot{
+        margin-top: 10px;
+
+      }
+
+
+
+      #right-text{
+        margin-left: 30vh;
+        margin-top: 40vh;
+      }
+
+      #view{
+        margin-right: 10px;
+        
+      }
+
+
+      #login_btn , #view , #hire-me {
+        background-color: rgb(80, 127, 127);
+        color: white;
+        font-weight: 600;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 10px 30px;
+        cursor: pointer;
+      }
+
+    
+      #align > h1{
+        margin-bottom: 20px;
+        
+      }
+
+      #hire-me{
+        margin-left: 10px;
+      }
+
+      #btn-group{
+        text-align: center;
+      }
+
+      #my-name{
+        color: rgb(80, 127, 127);
+      }
+
+      nav{
+        display: flex;
+        background-color: aliceblue;
+      }
+
+      ul{
+        display: flex;
+        font-weight: 800;
+        font-size: 18px;
+      }
+
+      li {
+        background-color: aliceblue;
+        padding: 15px 30px ;
+        list-style: none;
+      }
+
+      li > a{
+        text-decoration: none;
+        color: rgb(51, 51, 51);
+      }
+    
+
+      li:hover{
+        background-color: rgb(180, 180, 236);
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">About me </a></li>
+        </ul>
+    </nav>
+
+    <div id="outer">
+
+        <div class="box">
+            <h1>Login</h1>
+            <form action="">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" />
+                <label for="number">Number</label>
+                <input type="text" id="number" name="number" />
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" />
+                <button id="login_btn">Login</button>
+                <a href="" id="forgot">forgot password?</a>
+            </form>
+        </div>
+
+        <div id="right-text">
+            <div id="align">
+
+                <h1>Hi My Name is <span id="my-name">Abhinav Miriyala</span> </h1>
+                
+                <div id="btn-group">
+                    <button id="view">view</button>
+                    <button id="hire-me">Hire me</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  </body>
+</html>

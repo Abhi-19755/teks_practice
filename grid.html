@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* col size of the grid*/
+            /* grid-template-columns: 100px 100px 100px 300px;  */
+
+            grid-template-columns: repeat(2,100px);
+
+             /* row size of the grid*/
+            grid-template-rows: 100px 100px;
+            /* gap: 10px; */
+            row-gap: 15px;
+            column-gap: 3px;
+
+            
+        }
+
+        .item{
+                background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .con1 , .con2{
+          
+            background-color: rebeccapurple;
+            height: 100px;
+            width: 100px;
+        }
+
+        .con2{
+            display: inline-flex;
+            
+            background-color: red;
+            height: auto;
+            width: 300px;
+        }
+
+        .con1{
+            display: inline-block;
+
+        }
+
+        .con3{
+            display: inline-block;
+            align-items: center;
+            background-color: palevioletred;
+            height: 200px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- grid is a 2d layout both rows and cols -->
+
+    <!-- <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div> -->
+
+    <div class="con1"></div>
+    <div class="con2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam, nihil inventore tenetur expedita molestias tempora earum quod excepturi explicabo? Optio deleniti corporis deserunt vel quidem. Odio, nulla? Debitis, non.s</div>
+    <div class="con3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nisi earum ullam nostrum labore? Totam odio veniam sunt accusantium iure fuga non, fugit, itaque sed quod quaerat corporis dignissimos pariatur?</p>
+    </div>
+</body>
+</html>
