@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .mainbox{
+            display: flex;
+        }
+
+        .box{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            margin-right: 10px;
+        }
+
+        #box1{
+            /* default property  */
+            overflow: visible; 
+        }
+
+        #box2{
+            overflow: hidden;
+        }
+
+        #box3{
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        #box4{
+            overflow: auto;
+        }
+
+        span{
+            background-color: plum;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+
+        <div class="box" id="box1">
+            <h1>over flow set as  visible </h1>
+            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cum quae facere similique necessitatibus officiis? Fuga rerum ea doloribus, quibusdam repudiandae dignissimos pariatur dicta tempore, incidunt accusantium delectus neque ab!
+            Natus libero optio possimus nihil. Architecto commodi cupiditate modi nulla consectetur ea. Dolorum, necessitatibus minus odit laborum odio voluptate asperiores adipisci iusto corrupti! Quam cupiditate, quos dignissimos modi in hic!
+            Provident beatae velit, sunt est vero, distinctio iste ea excepturi expedita eum cumque animi mollitia in eligendi, pariatur tempore commodi magnam ducimus? Sint recusandae obcaecati dolore quae dignissimos cumque ipsam?
+            Porro asperiores odio itaque sunt in necessitatibus perferendis dignissimos accusamus maxime nemo aspernatur nostrum, soluta aut repudiandae eos, sequi facere, ab inventore delectus voluptas distinctio ea tempore accusantium. Dicta, culpa.
+            Cumque facilis veritatis eveniet id laudantium repudiandae ratione quas porro qui quisquam exercitationem, recusandae molestias consequuntur corrupti nisi odio ex perspiciatis, commodi sapiente aut, eligendi non error ea. Veniam, blanditiis.
+            Eos aliquam dignissimos ipsa velit officia maxime cupiditate, id doloribus, nostrum hic alias harum! Labore earum corrupti, rerum ut t
+        </div>
+        <div class="box" id="box2">
+            <h1>overflow set as hidden</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cum quae facere similique necessitatibus officiis? Fuga rerum ea doloribus, quibusdam repudiandae dignissimos pariatur dicta tempore, incidunt accusantium delectus neque ab!
+            Natus libero optio possimus nihil. Architecto commodi cupiditate modi nulla consectetur ea. Dolorum, necessitatibus minus odit laborum odio voluptate asperiores adipisci iusto corrupti! Quam cupiditate, quos dignissimos modi in hic!
+            Provident beatae velit, sunt est vero, distinctio iste ea excepturi expedita eum cumque animi mollitia in eligendi, pariatur tempore commodi magnam ducimus? Sint recusandae obcaecati dolore quae dignissimos cumque ipsam?
+            Porro asperiores odio itaque sunt in necessitatibus perferendis dignissimos accusamus maxime nemo aspernatur nostrum, soluta aut repudiandae eos, sequi facere, ab inventore delectus voluptas distinctio ea tempore accusantium. Dicta, culpa.
+            Cumque facilis veritatis eveniet id laudantium repudiandae ratione quas porro qui quisquam exercitationem, recusandae molestias consequuntur corrupti nisi odio ex perspiciatis, commodi sapiente aut, eligendi non error ea. Veniam, blanditiis.
+            Eos aliquam dignissimos ipsa velit officia maxime cupiditate, id doloribus, nostrum hic alias harum! Labore earum corrupti, rerum ut t
+        </div>
+        <div class="box" id="box3">
+            <h1>overflow set as scroll and <span>overflow-x</span>  as hidden</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cum quae facere similique necessitatibus officiis? Fuga rerum ea doloribus, quibusdam repudiandae dignissimos pariatur dicta tempore, incidunt accusantium delectus neque ab!
+            Natus libero optio possimus nihil. Architecto commodi cupiditate modi nulla consectetur ea. Dolorum, necessitatibus minus odit laborum odio voluptate asperiores adipisci iusto corrupti! Quam cupiditate, quos dignissimos modi in hic!
+            Provident beatae velit, sunt est vero, distinctio iste ea excepturi expedita eum cumque animi mollitia in eligendi, pariatur tempore commodi magnam ducimus? Sint recusandae obcaecati dolore quae dignissimos cumque ipsam?
+            Porro asperiores odio itaque sunt in necessitatibus perferendis dignissimos accusamus maxime nemo aspernatur nostrum, soluta aut repudiandae eos, sequi facere, ab inventore delectus voluptas distinctio ea tempore accusantium. Dicta, culpa.
+            Cumque facilis veritatis eveniet id laudantium repudiandae ratione quas porro qui quisquam exercitationem, recusandae molestias consequuntur corrupti nisi odio ex perspiciatis, commodi sapiente aut, eligendi non error ea. Veniam, blanditiis.
+            Eos aliquam dignissimos ipsa velit officia maxime cupiditate, id doloribus, nostrum hic alias harum! Labore earum corrupti, rerum ut t
+        </div>
+        <div class="box" id="box4">
+            <h1>over set as auto</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cum quae facere similique necessitatibus officiis? Fuga rerum ea doloribus, quibusdam repudiandae dignissimos pariatur dicta tempore, incidunt accusantium delectus neque ab!
+            Natus libero optio possimus nihil. Architecto commodi cupiditate modi nulla consectetur ea. Dolorum, necessitatibus minus odit laborum odio voluptate asperiores adipisci iusto corrupti! Quam cupiditate, quos dignissimos modi in hic!
+            Provident beatae velit, sunt est vero, distinctio iste ea excepturi expedita eum cumque animi mollitia in eligendi, pariatur tempore commodi magnam ducimus? Sint recusandae obcaecati dolore quae dignissimos cumque ipsam?
+            Porro asperiores odio itaque sunt in necessitatibus perferendis dignissimos accusamus maxime nemo aspernatur nostrum, soluta aut repudiandae eos, sequi facere, ab inventore delectus voluptas distinctio ea tempore accusantium. Dicta, culpa.
+            Cumque facilis veritatis eveniet id laudantium repudiandae ratione quas porro qui quisquam exercitationem, recusandae molestias consequuntur corrupti nisi odio ex perspiciatis, commodi sapiente aut, eligendi non error ea. Veniam, blanditiis.
+            Eos aliquam dignissimos ipsa velit officia maxime cupiditate, id doloribus, nostrum hic alias harum! Labore earum corrupti, rerum ut t
+        </div>
+    </div>
+</body>
+</html>

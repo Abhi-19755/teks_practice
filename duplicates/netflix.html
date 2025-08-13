@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      nav {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #nav_logo {
+        width: 150px;
+        height: 100px;
+      }
+
+      #nav_btn_group {
+        margin-top: 40px;
+        margin-right: 200px;
+      }
+
+      .nav_btn {
+        padding: 10px 20px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: 0;
+        border-radius: 10px;
+        margin-left: 10px;
+      }
+
+      #nav_signUp {
+        color: white;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 15px;
+      }
+
+      #lang {
+        padding: 10px 15px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+
+      .drop-d {
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+      }
+
+      #lang {
+        background-color: black;
+        color: white;
+        padding: 10px 15px;
+        font-size: 16px;
+        border: 1px solid white;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+
+
+      
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img id="nav_logo" src="/duplicates/img/N_logo1.png" alt="no" />
+      <div id="nav_btn_group">
+        <select  name="lang" id="lang">
+          <option value="">select</option>
+          <option class="drop-d" value="Eng">English</option>
+          <option class="drop-d" value="Tel">Telugu</option>
+        </select>
+        <a href="#login" id="login_bn">Login</a>
+        <!-- <button class="nav_btn" id="nav_signUp">sign up</button> -->
+      </div>
+    </nav>
+  </body>
+</html>

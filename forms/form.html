@@ -20,12 +20,13 @@
         flex-direction: column;
         width: 400px;
         height: auto;
-        margin-top: 20vh;
+        margin-top: 18vh;
         margin-left: 20vh;
         padding: 40px 20px 40px 20px;
         box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(2px);
         border-radius: 10px;
+        /* background-image: linear-gradient(rgb(186, 189, 219), rgb(231, 236, 241)); */
       }
       form {
         display: flex;
@@ -80,7 +81,7 @@
       }
 
 
-      #login_btn , #view , #hire-me {
+      #login_btn , #view , #hire-me , #login-nav {
         background-color: rgb(80, 127, 127);
         color: white;
         font-weight: 600;
@@ -111,6 +112,7 @@
       nav{
         display: flex;
         background-color: aliceblue;
+        justify-content: space-between;
       }
 
       ul{
@@ -134,6 +136,12 @@
       li:hover{
         background-color: rgb(180, 180, 236);
       }
+
+      #login-nav{
+        margin-right: 3%;
+        border-radius: 0;
+      }
+
     </style>
   </head>
   <body>
@@ -142,8 +150,9 @@
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="">Projects</a></li>
-            <li><a href="">About me </a></li>
+            <li ><a href="">About me </a></li>
         </ul>
+        <button id="login-nav">Login</button>
     </nav>
 
     <div id="outer">

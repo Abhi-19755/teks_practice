@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+        }
+        #box1{
+            /* moves the element from its current position   */
+            transform: translate(100px,100px);  /* x-axis , y-axis */
+            margin-left: 50px;
+        }
+
+        #box2{
+            margin-bottom: 50px;
+            transform: rotate(45deg);
+        }
+
+        #box3:hover{
+            transform: scale(0.5,0.5);
+        }
+
+        #box4{
+            margin-top: 30px;
+            margin-left: 30px;
+            transform: skew(20deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">box 1</div>
+    <div class="box"   id="box2">box 2</div>
+    <div class="box"  id="box3"> box 3</div>
+    <div class="box"  id="box4"> box 4</div>
+</body>
+</html>

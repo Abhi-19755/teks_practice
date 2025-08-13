@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position properties</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: violet;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #box1 {
+        position: fixed; /* Default property all html tags use this property as default we cant move */
+        left: 400px;
+      }
+
+
+      /* this is relative  */
+      #box2 {
+        position: relative;
+        left: 600px;
+      }
+
+      /* parent relative position */
+      #relbox {
+        height: 200px;
+        width: 200px;
+        position: relative;
+        background-color: rebeccapurple;
+        color: white;
+      }
+
+      /* absolute position */
+      #box4 {
+        color: #000;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+      }
+
+
+      /* stikcy */
+      #box5 {
+        margin-top: 100px;
+        position: sticky;
+        top: 0; 
+        /* to give atleast one property top, bottom, left, or right so the browser knows where should it stick to */
+      }
+
+      .relbox1{
+        position: relative;
+
+      }
+
+
+
+      #box6{
+        
+        position: absolute;
+        z-index: 1;
+        top: 30px;
+        left: 30px;
+      }
+
+      #box7{
+        background-color: purple;
+        position: absolute;
+      }
+
+      #box8{
+        background-color: rgb(255, 194, 255);
+        z-index: 2;
+        position: absolute;
+        top:  70px;
+        left: 70px;
+      }
+
+      
+
+
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box1">i am fixed box</div>
+    <div class="box" id="box2">i am relative box</div>
+
+    <div id="relbox">
+      parent is in relative position
+      <div class="box" id="box4">absolute position</div>
+    </div>
+
+    <div class="box" id="box5">i am sticky</div>
+
+
+    <div class="relbox1">
+        <div class="box" id="box6">box6</div>
+        <div class="box" id="box7">box7</div>
+        <div class="box" id="box8">box8 z-index</div>
+    </div>
+
+
+    
+      
+
+  </body>
+</html>
