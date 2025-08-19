@@ -1,0 +1,262 @@
+Core Java Roadmap (Step-by-Step)
+Phase 1: Java Fundamentals
+
+Goal: Understand Java basics and write small programs.
+
+Java Overview & Setup
+
+What is Java, history, and features
+
+JDK, JRE, JVM — differences & roles
+
+Installing Java & setting up environment variables
+
+Writing first Java program (Hello World)
+
+Understanding main method
+
+Compilation & Execution process (javac & java)
+
+Java Syntax & Variables
+
+Keywords & Identifiers
+
+Data Types (primitive & non-primitive)
+
+Variables (local, instance, static)
+
+Constants (final)
+
+Type casting (implicit & explicit)
+
+Operators
+
+Arithmetic, Relational, Logical, Bitwise, Assignment
+
+Ternary operator (?:)
+
+Operator precedence & associativity
+
+🎯 Mini Task: Write a program to swap two numbers without using a third variable.
+
+Phase 2: Control Flow
+
+Goal: Master decision-making & looping.
+
+Conditional Statements
+
+if, if-else, nested if
+
+switch-case (with break and default)
+
+Loops
+
+for, while, do-while
+
+Nested loops
+
+Enhanced for-loop (for-each)
+
+Jump Statements
+
+break
+
+continue
+
+return
+
+🎯 Mini Task: Print multiplication table for any number using loops.
+
+Phase 3: Object-Oriented Programming (OOP)
+
+Goal: Learn the foundation of Java programming.
+
+Classes & Objects
+
+Defining a class, creating objects
+
+Accessing fields & methods
+
+this keyword
+
+Constructors
+
+Default, parameterized, copy constructor
+
+Constructor chaining (this() & super())
+
+Methods
+
+Method definition & calling
+
+Method overloading
+
+Pass-by-value in Java
+
+Inheritance
+
+extends keyword
+
+Single, multilevel, hierarchical inheritance
+
+Method overriding
+
+super keyword (accessing parent members)
+
+Polymorphism
+
+Compile-time (overloading)
+
+Runtime (overriding + dynamic method dispatch)
+
+Abstraction
+
+Abstract classes & methods
+
+Interfaces (Java 8 default & static methods)
+
+Encapsulation
+
+Private fields, getters, setters
+
+Access modifiers (public, private, protected, default)
+
+🎯 Mini Task: Create a BankAccount class with deposit, withdraw, and balance check features.
+
+Phase 4: Java Core APIs
+
+Goal: Work with built-in Java libraries.
+
+Strings
+
+String creation & immutability
+
+String methods (length, substring, replace, etc.)
+
+StringBuffer & StringBuilder (mutable strings)
+
+String comparison (equals, equalsIgnoreCase, compareTo)
+
+Wrapper Classes
+
+Autoboxing & unboxing
+
+Useful methods in wrapper classes
+
+Java Math & Date APIs
+
+Math class methods
+
+Working with LocalDate, LocalTime, LocalDateTime
+
+Phase 5: Arrays & Collections
+
+Goal: Handle groups of data efficiently.
+
+Arrays
+
+1D, 2D arrays
+
+Array methods (Arrays.sort, Arrays.copyOf)
+
+Collections Framework
+
+List (ArrayList, LinkedList)
+
+Set (HashSet, TreeSet, LinkedHashSet)
+
+Map (HashMap, TreeMap, LinkedHashMap)
+
+Iterator & ListIterator
+
+Comparable vs Comparator
+
+🎯 Mini Task: Store student names in a List and sort them alphabetically.
+
+Phase 6: Exception Handling
+
+Goal: Write safe, error-proof code.
+
+Types of Exceptions
+
+Checked vs Unchecked exceptions
+
+Common exceptions (NullPointerException, ArithmeticException, etc.)
+
+Handling Exceptions
+
+try-catch-finally
+
+throw vs throws
+
+Multiple catch blocks
+
+Custom exceptions
+
+🎯 Mini Task: Create a custom exception for invalid bank withdrawal.
+
+Phase 7: Java I/O & File Handling
+
+Goal: Read/write files.
+
+File Handling
+
+File class (exists, createNewFile)
+
+FileReader & FileWriter
+
+BufferedReader & BufferedWriter
+
+Reading from and writing to files
+
+Serialization
+
+Serializable interface
+
+ObjectOutputStream & ObjectInputStream
+
+🎯 Mini Task: Store and read student data from a text file.
+
+Phase 8: Multithreading Basics
+
+Goal: Understand concurrent execution.
+
+Thread Creation
+
+Extending Thread class
+
+Implementing Runnable interface
+
+Thread lifecycle
+
+Thread Control
+
+sleep, join, yield
+
+Synchronization basics
+
+Phase 9: Java 8+ Features
+
+Goal: Write modern, concise Java code.
+
+Lambda Expressions
+
+Syntax & usage
+
+Functional interfaces (@FunctionalInterface)
+
+Streams API
+
+filter, map, reduce, collect
+
+Method references (::)
+
+Optional Class
+
+Avoiding NullPointerExceptions
+
+✅ After this roadmap, you’ll be ready to:
+
+Move into Advanced Java (Servlets, JSP, JDBC, Multithreading in depth)
+
+Start Spring Boot confidently without feeling lost.

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .overlap {
+    display: grid;
+    grid-template-areas:
+      "image text";
+    grid-template-columns: 2fr 1fr;
+    height: 300px;
+    position: relative;
+  }
+  .image { grid-area: image; background: url('https://images.pexels.com/photos/33268413/pexels-photo-33268413.jpeg') no-repeat center/cover; }
+  .text {
+    grid-area: text;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+  }
+</style>
+</head>
+<body>
+    <div class="overlap">
+  <div class="image"></div>
+  <div class="text">Overlay Text</div>
+</div>
+</body>
+</html>
