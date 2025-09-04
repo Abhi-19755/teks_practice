@@ -1,0 +1,286 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+header {
+  background: #111;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#outerUL {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+#innerUL {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+#innerUL a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+#innerUL a:hover {
+  color: #00c3ff;
+}
+
+/* Hero Section */
+section {
+  padding: 4rem 10%;
+  text-align: center;
+}
+
+#title {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00c3ff;
+  margin-bottom: 1rem;
+}
+
+#heading1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#para1 {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 0.8rem 2rem;
+  background: #00c3ff;
+  border: none;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #007b9e;
+  transform: scale(1.05);
+}
+
+/* About Section */
+.OuterDiv {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.OuterDiv img {
+  width: 40%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.OuterDiv img:hover {
+  transform: scale(1.03);
+}
+
+#innerDiv {
+  text-align: left;
+}
+
+.skills {
+  margin-top: 1.5rem;
+}
+
+.Skillnames {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border: 1px solid #00c3ff;
+  border-radius: 20px;
+  margin: 0.3rem;
+  background: #e6f7ff;
+  color: #007b9e;
+  transition: background 0.3s ease;
+}
+
+.Skillnames:hover {
+  background: #00c3ff;
+  color: #fff;
+}
+
+/* Portfolio Cards */
+.FeatureDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h1 {
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.card-content {
+  padding: 0 1rem 1rem;
+  color: #555;
+}
+
+.card .tags {
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #00c3ff;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Contact Section */
+#contact {
+  text-align: center;
+  background: #f1faff;
+  padding: 4rem 10%;
+}
+
+#contact h1 {
+  margin-bottom: 1rem;
+}
+
+#contact p {
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.form {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+.form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.form button {
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  padding: 1.5rem 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.policies a {
+  color: #aaa;
+  text-decoration: none;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.policies a:hover {
+  color: #00c3ff;
+}
+
+/* Fade-in Scroll Animation */
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 0.8s ease-out;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .OuterDiv {
+    flex-direction: column;
+  }
+
+  .OuterDiv img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  #heading1 {
+    font-size: 1.8rem;
+  }
+
+  #innerUL {
+    gap: 1rem;
+  }
+
+  .FeatureDiv {
+    grid-template-columns: 1fr;
+  }
+}

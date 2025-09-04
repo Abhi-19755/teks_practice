@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#outerUL,
+#innerUL {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+#outerUL {
+  justify-content: space-between;
+}
+
+nav {
+  padding: 20px;
+}
+
+nav ul li {
+  padding: 0px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+#logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+/* section */
+
+section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#title {
+  text-transform: uppercase;
+}
+
+#title , #para1 {
+  text-align: center;
+}
+
+#heading1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+#para1 {
+  font-size: 1.3rem;
+}
+
+/* About */
+
+#About {
+  background-color: #f8fafc;
+  padding: 30px 0;
+  margin-bottom: 5rem;
+}
+
+#heading2 {
+  border-bottom: 4px solid black;
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+
+.OuterDiv {
+  display: flex;
+  gap: 20px;
+  padding: 0 30px 0 40px;
+}
+
+.OuterDiv img {
+  /* width: ; */
+  border-radius: 30px;
+}
+
+.OuterDiv #innerDiv {
+  font-size: 1.25rem;
+}
+
+#innerDiv {
+  padding: 0 10px;
+  text-align: start;
+}
+
+#innerDiv h1,
+p {
+  margin-bottom: 2rem;
+}
+
+.skills {
+  display: flex;
+  gap: 2rem;
+}
+
+.Skillnames {
+  padding: 12px 24px;
+  text-align: center;
+  border-radius: 25px;
+  color: #6366f1;
+  font-weight: 600;
+  font-size: 0.9rem;
+  backdrop-filter: blur(2);
+  box-shadow: 1px 0 4px rgba(0, 0, 0, 0.279);
+}
+
+#heading2 h2 {
+  font-size: 3.5rem;
+}
+
+
+/* Cards */
+
+.FeatureDiv{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+.card {
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  border-radius:0 15px ;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h1 {
+  font-size: 20px;
+  /* margin: 0 0 10px; */
+  color: #111827;
+}
+
+.card p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+  /* margin-bottom: 15px; */
+}
+
+.card h1,p {
+  text-align: start;
+}
+
+.FeatureDiv h1 ,.card-content{
+    padding: 10px 20px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 20px  ;
+}
+
+.tag {
+  background: #f3f4f6;
+  color: #374151;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+/* contact */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  background-color: #f8fafc;
+}
+
+#contact p{
+    width: 1000px;
+    text-align: center;
+}
+
+
+/* footer */
+
+#foot-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: #374151;
+    color: white;
+    align-items: center;
+}
+
+
+.policies a{
+    text-decoration: none;
+    color: white;
+}
+
+.policy{
+    display: inline-block;
+    padding: 0 20px;
+}
